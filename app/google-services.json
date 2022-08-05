@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980949201499",
+    "project_id": "code-blue-33433",
+    "storage_bucket": "code-blue-33433.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980949201499:android:e59b578efc8f3dd2ea457e",
+        "android_client_info": {
+          "package_name": "com.example.codeblue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980949201499-d5s9nmnqfb4tspldfpbpebhlmurfk5h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZXjVxV3rcFFHwe56fGhfdRHAFbq0NBig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980949201499-d5s9nmnqfb4tspldfpbpebhlmurfk5h4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

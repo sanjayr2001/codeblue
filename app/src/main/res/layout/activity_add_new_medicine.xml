@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBDBDB"
+    tools:context=".AddNewMedicineActivity">
+
+    <TextView
+        android:id="@+id/addmedicinemessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:layout_alignParentTop="true"
+        android:text="Add New Medicine"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/xdblack"
+        android:textSize="27sp"
+         />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/medicineTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of Medicine"
+        android:layout_below="@+id/addmedicinemessage"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/xdblack"
+        android:textColorHint="@color/xdblack"
+        app:hintTextColor="@color/xdblack"
+        android:fontFamily="@font/normal"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/medicineEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="@color/xdblack"
+            android:fontFamily="@font/normal"
+            android:textColorHint="@color/xdblack"
+            />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/typeofmedicineTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicineTextField"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="220dp"
+        android:hint="Type"
+        app:boxStrokeColor="@color/xdblack"
+        android:textColorHint="@color/xdblack"
+        app:hintTextColor="@color/xdblack">
+
+        <AutoCompleteTextView
+            android:id="@+id/typeofmedicineTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textColor="@color/xdblack"
+            android:fontFamily="@font/normal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:layout_below="@+id/medicineTextField"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="25dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/xdblack"
+        android:textColorHint="@color/xdblack"
+        app:hintTextColor="@color/xdblack"
+        android:fontFamily="@font/normal"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/quantityTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/xdblack"
+            android:fontFamily="@font/normal"
+            android:textColorHint="@color/xdblack"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:id="@+id/unitsTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typeofmedicineTextField"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Units"
+        app:boxStrokeColor="@color/xdblack"
+        android:textColorHint="@color/xdblack"
+        app:hintTextColor="@color/xdblack">
+
+        <AutoCompleteTextView
+            android:id="@+id/dosageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textColor="@color/xdblack"
+            android:fontFamily="@font/normal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/setdose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/bold"
+        android:text="set dose"
+        android:textAllCaps="true"
+        android:textColor="@color/xdblack"
+        android:textSize="18sp"
+        android:layout_below="@+id/unitsTextField"
+        android:layout_marginTop="60dp"
+        android:layout_alignLeft="@+id/unitsTextField"
+        app:strokeColor="@color/xdblack"
+        app:strokeWidth="1dp"
+        app:icon="@drawable/outline_date_range_black_24"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        app:rippleColor="@color/white">
+    </Button>
+
+    <Button
+        android:id="@+id/settimebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/bold"
+        android:text="set time"
+        android:textAllCaps="true"
+        app:strokeColor="@color/xdblack"
+        app:strokeWidth="1dp"
+        android:textColor="@color/xdblack"
+        android:textSize="18sp"
+        android:layout_below="@+id/unitsTextField"
+        android:layout_marginTop="60dp"
+        android:layout_alignRight="@+id/unitsTextField"
+        app:icon="@drawable/baseline_alarm_black_24"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        app:rippleColor="@color/white">
+    </Button>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/semibold"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/xdblack"
+        style="@style/Widget.MaterialComponents.Button"
+        app:rippleColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setdose"
+        android:layout_marginTop="80dp">
+    </Button>
+
+</RelativeLayout>

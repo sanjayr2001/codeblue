@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBDBDB"
+    tools:context=".ProfileActivity">
+
+
+    <TextView
+        android:id="@+id/updatemessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/bold"
+        android:text="Update Your Profile"
+        android:textColor="@color/xdblack"
+        android:textSize="27sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nametextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_below="@+id/updatemessage"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:startIconDrawable="@drawable/outline_person_black_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/xdblack"
+        android:textColorHint="@color/xdblack"
+        app:hintTextColor="@color/xdblack"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="@color/xdblack"
+            android:fontFamily="@font/normal"
+            android:textColorHint="@color/xdblack"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/agetextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:layout_below="@+id/nametextField"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:startIconDrawable="@drawable/outline_date_range_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/xdblack"
+        android:textColorHint="@color/xdblack"
+        app:hintTextColor="@color/xdblack"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="@color/xdblack"
+            android:fontFamily="@font/normal"
+            android:textColorHint="@color/xdblack"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phonetextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_below="@+id/agetextField"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:startIconDrawable="@drawable/outline_phone_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/xdblack"
+        android:textColorHint="@color/xdblack"
+        app:hintTextColor="@color/xdblack"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="@color/xdblack"
+            android:fontFamily="@font/normal"
+            android:textColorHint="@color/xdblack"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioButton
+        android:id="@+id/malerdbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textSize="18sp"
+        android:layout_below="@+id/phonetextField"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="150dp"
+        android:fontFamily="@font/normal"
+        android:textColor="@color/xdblack"/>
+
+    <RadioButton
+        android:id="@+id/femalerdbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:textSize="18sp"
+        android:layout_below="@+id/phonetextField"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="250dp"
+        android:fontFamily="@font/normal"
+        android:textColor="@color/xdblack"/>
+
+    <TextView
+        android:id="@+id/gendertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonetextField"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="50dp"
+        android:text="Gender"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/xdblack"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/semibold"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/xdblack"
+        style="@style/Widget.MaterialComponents.Button"
+        app:rippleColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/malerdbutton"
+        android:layout_marginTop="60dp">
+    </Button>
+
+</RelativeLayout>
